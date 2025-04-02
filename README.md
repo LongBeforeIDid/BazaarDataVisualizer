@@ -6,7 +6,7 @@
 
 A simple GUI tool that allows you to visualize and compare the expected output of two items for a given combat duration and percentage of cooldown reduction applied.
 
-Currently, it only functions for basic damage, heal, and shield items (while the app uses the terms "weapon" and "damage" exclusively, the numbers would be identical for heal and shield items as well.) I entend to add more features, including poison and fire calculations, accounting for item size, and to allow the user to map other variables to the y axis instead of cooldown reduction (e.g expected haste uptime, crit chance, etc.).
+Currently, it only functions for basic damage, heal, and shield items (while the app uses the terms "weapon" and "damage" exclusively, the numbers would be identical for heal and shield items as well.) I intend to add more features, including poison and fire calculations, accounting for item size, and to allow the user to map other variables to the y axis instead of cooldown reduction (e.g expected haste uptime, crit chance, etc.).
 
 ## User Guide
 
