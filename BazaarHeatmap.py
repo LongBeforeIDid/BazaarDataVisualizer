@@ -16,28 +16,20 @@ from preset_database import insert_preset  # Import the missing function
 
 initialize_database()
 
-
-
 # Define the custom colormap with more colors for finer detail
 colors = ["red", "yellow", "green"]
 cmap = LinearSegmentedColormap.from_list("detailed_cmap", colors)
 
 def calculate_value(y, x, damage, mult, base_cooldown):
     y = y / 100
-    print(damage)
     net_damage = damage * mult
-    print(net_damage)
     cooldown_mod = (1 - min(((base_cooldown - 1) / base_cooldown), y))
     net_cooldown = base_cooldown * cooldown_mod
     net_dps = net_damage / net_cooldown
     ideal_dps = (x * net_dps)
     wasted_dps = (net_dps * (x - (net_cooldown * math.floor(x / net_cooldown))))
     expected_damage = ideal_dps - wasted_dps
-    if y == 1:
-        print(expected_damage)
     return expected_damage
-
-
 
 # Global dictionary to track the current canvas for each tab
 current_canvas = {}
@@ -361,15 +353,10 @@ def delete_heatmap(tab_name, plot_frame):
         else:
             current_canvas[tab_name].get_tk_widget().destroy()
         current_canvas[tab_name] = None
-        print(f"Heatmap in {tab_name} deleted.")
-    else:
-        print(f"No heatmap to delete in {tab_name}.")
-
     # Delete the text element (cursor information label) if it exists
     for widget in plot_frame.winfo_children():
         if isinstance(widget, ttk.Label):  # Check if the widget is a label
             widget.destroy()
-            print(f"Text element in {tab_name} deleted.")
 
 def update_field_from_slider(slider_value, entry_field):
     """
@@ -383,9 +370,8 @@ def update_field_from_slider(slider_value, entry_field):
 def save_preset(name, damage, mult, base_cooldown, low_cap, high_cap, max_cdr):
     try:
         insert_preset(name, damage, mult, base_cooldown, low_cap, high_cap, max_cdr)
-        print(f"Preset '{name}' saved successfully.")
     except sqlite3.IntegrityError:
-        print(f"Preset '{name}' already exists.")
+        pass
 
 def create_tab(notebook, tab_name):
     tab = ttk.Frame(notebook)

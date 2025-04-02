@@ -1,5 +1,7 @@
 # Bazaar Data Visualizer
 
+![Screenshot of the GUI interface, with a generated damage heatmap for bronze Brass Knuckles](images/Header_Image.png)
+
 ## Description
 
 A simple GUI tool that allows you to visualize and compare the expected output of two items for a given combat duration and percentage of cooldown reduction applied.
@@ -10,11 +12,17 @@ Currently, it only functions for basic damage, heal, and shield items (while the
 
 How should you use this tool? That's entirely up to you. It's faily limited in its current state, and The Bazaar is a very complex game with lots of edge cases and complicating factors. It never hurts to have more information though, and messing around with seeing how different values generate different heatmaps might help develop your intuition for how a given item will perform.
 
-Right now, I think it's best suited to helping make decisions on Day 1 and Day 2 
+Right now, I think it's best suited to helping make decisions on Day 1 and Day 2, when you may realistically be deciding between which of a few mediocre weapons are worth keeping on your board, and there are likely to be minimal complicating factors (haste, slow, skills, synergies, etc.)
+
+Here's an example: it's Day 1, and you purchased Brass Knuckles at your first store and recieved a fang from combat. You hit up Curio and pick up some lifting gloves, buffing your Fang and Knuckles to a base damage of 8 and 11 respectively. The Fang now has an expected 2.66 DPS, while the Knuckles has an expected 2.75 DPS. What does your intuition tell you about which will perform better in combat?
+
+![Screenshot of a comparison heatmap showing the relative difference in performance between a 2.66 DPS, 3s CD item and a 2.75 DPS, 8s CD item ](/images/Fang_vs_Knuckles.png)
+
+In the above heatmap, green represents the % by which the Fang is expected to outperform the Knuckles, while red represents the inverse. Despite the Knuckles having a higher DPS, the heatmap is almost entirely green and yellow, meaning the Fang will outperform in nearly all scenarios.
 
 ## Documentation
 
-### Tab One and Two
+### Tabs One and Two
 
 The first two tabs allow you to generate a heatmap of expected damage output for a particular item. When you hover over a square on the heatmap, it will tell you the expected output for that specific intersection of combat duration and CDR.
 
@@ -39,11 +47,18 @@ End at storm: By default, the x-axis has a range of 60 seconds. If this box is c
 
 ### Comparison Tab
 
-Absolute Damage: When checked, 
+Absolute Damage: By default, the comparison table is calculated using the relative improvement one item represents over the other (i.e weapon 1 is 10% stronger than weapon 2). If you check this box, it will instead be generated using the raw damage numbers (i.e weapon 1 will deal 10 more damage than weapon 2.)
 
+### Installation Instructions
 
+For anyone not familiar with Python and the command line, I've built a single-click executable version of this script that includes all the necessary dependancies. You can find it on the "releases" page in the top right.
 
-To install them, run:
+Those who already use Python and don't want to download redundant libraries all probably know what they're doing already, but to be thorough, all requirements are listed in requirements.txt, and can be installed using the command:
+
 ```bash
 pip install -r requirements.txt
 ```
+
+### Disclaimer
+
+I am learning as I go. There are likely many very stupid bugs. If you encounter any and would like to report it, I would greatly appreciate it.
