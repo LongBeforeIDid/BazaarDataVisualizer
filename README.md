@@ -27,8 +27,11 @@ In the above heatmap, green represents the % by which the Fang is expected to ou
 The first two tabs allow you to generate a heatmap of expected damage output for a particular item. When you hover over a square on the heatmap, it will tell you the expected output for that specific intersection of combat duration and CDR.
 
 **Damage**: Self explanatory. The base value on the item. Could be heal or shield as well.
+
 **Mult**: Multiplier to base damage (either from multicast or obsidian)
+
 **Base Cooldown**: Item's cooldown without applying CDR.
+
 
 **Low Cap**: This pegs the low end of the colormap to whatever value is entered. Leave blank for automatic fit.
 **High Cap**: This pegs the high end of the colormap to whatever value is entered. Leave blank for automatic fit.
