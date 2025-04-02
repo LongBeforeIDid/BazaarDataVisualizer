@@ -10,7 +10,7 @@ Currently, it only functions for basic damage, heal, and shield items (while the
 
 ## User Guide
 
-How should you use this tool? That's entirely up to you. It's faily limited in its current state, and The Bazaar is a very complex game with lots of edge cases and complicating factors. It never hurts to have more information though, and messing around with seeing how different values generate different heatmaps might help develop your intuition for how a given item will perform.
+How should you use this tool? That's entirely up to you. It's fairly limited in its current state, and The Bazaar is a very complex game with lots of edge cases and complicating factors. It never hurts to have more information though, and messing around with seeing how different values generate different heatmaps might help develop your intuition for how a given item will perform.
 
 Right now, I think it's best suited to helping make decisions on Day 1 and Day 2, when you may realistically be deciding between which of a few mediocre weapons are worth keeping on your board, and there are likely to be minimal complicating factors (haste, slow, skills, synergies, etc.)
 
