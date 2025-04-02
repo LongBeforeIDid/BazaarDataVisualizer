@@ -26,28 +26,28 @@ In the above heatmap, green represents the % by which the Fang is expected to ou
 
 The first two tabs allow you to generate a heatmap of expected damage output for a particular item. When you hover over a square on the heatmap, it will tell you the expected output for that specific intersection of combat duration and CDR.
 
-Damage: Self explanatory. The base value on the item. Could be heal or shield as well.
-Mult: Multiplier to base damage (either from multicast or obsidian)
-Base Cooldown: Item's cooldown without applying CDR.
+**Damage**: Self explanatory. The base value on the item. Could be heal or shield as well.
+**Mult**: Multiplier to base damage (either from multicast or obsidian)
+**Base Cooldown**: Item's cooldown without applying CDR.
 
-Low Cap: This pegs the low end of the colormap to whatever value is entered. Leave blank for automatic fit.
-High Cap: This pegs the high end of the colormap to whatever value is entered. Leave blank for automatic fit.
+**Low Cap**: This pegs the low end of the colormap to whatever value is entered. Leave blank for automatic fit.
+**High Cap**: This pegs the high end of the colormap to whatever value is entered. Leave blank for automatic fit.
 
-[!TIP]
-These settings are only visual, they don't change any values or the actual range of the heatmap. You most likely want to leave them blank. There are two main reasons you would want to adjust these values: 
-1. You want to normalize the colormap so you can visually compare the charts of two items more easily, in which case you should make sure these values are equal for both items
-2. Your weapon scales exponentially and you've lost detail in important parts of your heatmap (i.e if the very upper right corner is green but the rest of the heatmap is uniform red, you may want to set High Cap to a more sensible number.) 
+>[!TIP]
+>The above two settings are only visual, they don't change any values within, or the actual range of, the heatmap. You most likely want to leave them blank. There are two main reasons you would want to adjust these values: 
+>1. You want to normalize the colormap so you can visually compare the charts of two items more easily, in which case you should make sure these >values are equal for both items
+>2. Your weapon scales exponentially and you've lost detail in important parts of your heatmap (i.e if the very upper right corner is green but the rest of the heatmap is uniform red, you may want to set High Cap to a more sensible number.) 
 
-Maximum CDR: This scales the range of values on the y-axis, with 10 being the minimum. Setting it to 100 will give you a prettier chart, but you should probably set it much lower, within the range of CDR you expect is possible for your situation.
+**Maximum CDR**: This scales the range of values on the y-axis, with 10 being the minimum. Setting it to 100 will give you a prettier chart, but you should probably set it much lower, within the range of CDR you expect is possible for your situation.
 
-End at storm: By default, the x-axis has a range of 60 seconds. If this box is checked, it will truncate the range of the x-axis to 30 seconds.
+**End at storm**: By default, the x-axis has a range of 60 seconds. If this box is checked, it will truncate the range of the x-axis to 30 seconds.
 
-[!WARNING]
-"Maximum CDR" and "End at storm" affect the actual dimensions of the generated heatmap. If you want to generate a comparison heatmap for two items, you must ensure that these values are consistent across both of them such that their dimensions are the same.
+>[!WARNING]
+>"Maximum CDR" and "End at storm" affect the actual dimensions of the generated heatmap. If you want to generate a comparison heatmap for two items, you must ensure that these values are consistent across both of them such that their dimensions are the same.
 
 ### Comparison Tab
 
-Absolute Damage: By default, the comparison table is calculated using the relative improvement one item represents over the other (i.e weapon 1 is 10% stronger than weapon 2). If you check this box, it will instead be generated using the raw damage numbers (i.e weapon 1 will deal 10 more damage than weapon 2.)
+**Absolute Damage**: By default, the comparison table is calculated using the relative improvement one item represents over the other (i.e weapon 1 is 10% stronger than weapon 2). If you check this box, it will instead be generated using the raw damage numbers (i.e weapon 1 will deal 10 more damage than weapon 2.)
 
 ### Installation Instructions
 
