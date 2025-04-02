@@ -47,7 +47,7 @@ The first two tabs allow you to generate a heatmap of expected damage output for
 **End at storm**: By default, the x-axis has a range of 60 seconds. If this box is checked, it will truncate the range of the x-axis to 30 seconds.
 
 >[!WARNING]
->"Maximum CDR" and "End at storm" affect the actual dimensions of the generated heatmap. If you want to generate a comparison heatmap for two items, you must ensure that these values are consistent across both of them such that their dimensions are the same.
+>"Maximum CDR" and "End at storm" affect the actual dimensions of the generated heatmap. If you want to generate a comparison heatmap for two items, you must ensure that these values are consistent across both such that their dimensions are the same.
 
 ### Comparison Tab
 
