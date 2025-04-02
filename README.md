@@ -34,6 +34,7 @@ The first two tabs allow you to generate a heatmap of expected damage output for
 
 
 **Low Cap**: This pegs the low end of the colormap to whatever value is entered. Leave blank for automatic fit.
+
 **High Cap**: This pegs the high end of the colormap to whatever value is entered. Leave blank for automatic fit.
 
 >[!TIP]
