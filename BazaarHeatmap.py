@@ -264,6 +264,9 @@ def generate_heatmap(damage_entry, mult_entry, base_cooldown_entry, error_label,
         index=[f"{y / 100:.0%}" for y in range(max_cdr)]  # Format y values as percentages
     )
 
+    # Store the heatmap data for this tab
+    heatmap_data[tab_name] = df
+
     # Set vmin and vmax based on user-provided caps
     vmin = low_cap if low_cap is not None else df.values.min()
     vmax = high_cap if high_cap is not None else df.values.max()
@@ -274,8 +277,8 @@ def generate_heatmap(damage_entry, mult_entry, base_cooldown_entry, error_label,
         df,
         cbar_kws={'orientation': 'vertical'},
         yticklabels=True,  # Use the DataFrame index for yticklabels
-        vmin=vmin,  # Apply visual low cap
-        vmax=vmax,  # Apply visual high cap
+        vmin=vmin,
+        vmax=vmax,
         cmap=cmap,
         ax=ax
     )
