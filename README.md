@@ -39,7 +39,7 @@ The first two tabs allow you to generate a heatmap of expected damage output for
 
 >[!TIP]
 >The above two settings are only visual. They don't change any values within, or the actual range of, the heatmap. You most likely want to leave them blank. There are two main reasons you would want to adjust these values: 
->1. You want to normalize the colormap so you can visually compare the charts of two items more easily, in which case you should make sure these >values are equal for both items
+>1. You want to normalize the colormap so you can visually compare the charts of two items more easily, in which case you should make sure these values are equal for both items
 >2. Your weapon scales exponentially and you've lost detail in important parts of your heatmap (i.e if the very upper right corner is green but the rest of the heatmap is uniform red, you may want to set High Cap to a more sensible number.) 
 
 **Maximum CDR**: This scales the range of values on the y-axis, with 10 being the minimum. Setting it to 100 will give you a prettier chart, but you should probably set it much lower, within the range of CDR you expect is possible for your situation.
